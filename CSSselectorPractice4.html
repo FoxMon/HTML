@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic</title>
+    <style>
+        /* input태그가 사용 가능할 경우, background-color속성에 white키워드 적용 */
+        
+        input:enabled { background-color: white; }
+
+        /* input태그가 사용 불가능할 경우, background-color속성에 gray키워드 적용 */
+
+        input:disabled { background-color: gray; }
+
+        /* input태그에 초점이 맞춰진 경우, background-color속성에 orange키워드 적용 */
+
+        input:focus { background-color: orange; }
+    </style>
+</head>
+<body>
+    <h2>Enabled</h2>
+    <input />
+    <h2>Disabled</h2>
+    <input disabled = "disabled" />
+</body>
+</html>
