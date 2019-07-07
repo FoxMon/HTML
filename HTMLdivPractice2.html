@@ -117,6 +117,35 @@
                 #main_lnb > ul > li:last-child > a {
                     border-radius: 0 10px 10px 0;
                 }
+
+                /* 콘텐츠 */
+                #content {
+                    /* 중앙정렬 */
+                    width: 960px;
+                    margin: 0 auto;
+
+                    /* 수평 레이아웃 구성 일부러 태그의 간격을 두기 위해 10px 남김 */
+                    overflow: hidden;
+                }
+
+                /* 왼쪽에 붙임 */
+                #content > #main_section {
+                    width: 750px;
+                    float: left;
+                }
+
+                /* 오른쪽에 붙임 */
+                #content > #main_aside {
+                    width: 200px;
+                    float: right;
+                }
+
+                /* 본문 Article */
+                #main_section > article.main_article {
+                    margin-bottom: 10px;
+                    padding: 20px;
+                    border: 1px solid black;
+                }
             </style>
         </head>
         <body>
@@ -144,6 +173,30 @@
                     </ul>
                 </nav>
             </header>
+            
+            <div id = "content">
+                <section id = "main_section">
+                    <h1>Main Section</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In phareta, diam ut ornare malesuda, arcu tellus ulticies arcu, ut sodales orci metus quis libero.</p>
+
+                    <article class ="main_article">
+                        <h1>Main Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                    <article class ="main_article">
+                        <h1>Main Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                    <article class ="main_article">
+                        <h1>Main Article</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                </section>
+                <aside id = "main_aside">
+                    <h1>Main Aside</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In phareta, diam ut ornare malesuda, arcu tellus ulticies arcu, ut sodales orci metus quis libero.</p>
+                </aside>
+            </div>  
         </body>
         </html>
 </html>
