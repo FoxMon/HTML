@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>게시판 입력양식</title>
+    <title>Bulletin_Form</title>
     <style>
-        #main_table {
-            width: 960px;
+        table {
             margin: 0 auto;
         }
     </style>
 </head>
 <body>
-    <header id = "main_table">
-    <div class = "container">
-        <table class = "table_border">
-            <thead>
-                <caption>글 작성</caption>
-            </thead>
-            <tbody>
-                <form>
-                    <tr>
-                        <th>제목</th>
-                        <td>
-                            <input type = "text" placeholder = "제목 입력." name = "subject" style = "width : 960px; height : 50px; font:size 15px;" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>내용</th>
-                        <td>
-                            <textarea cols = "10" placeholder = "내용 입력. " name = "content" style = "width : 960px; height : 600px; font:size 15px;"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>첨부파일: </th>
-                        <td>
-                            <input type = "file" name = "filename"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>비밀번호: </th>
-                        <td>
-                            <input type = "password" placeholder = "비밀번호 입력." style = "width : 300px; height : 15px; font:size 15px;"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <input type = "button" value = "등록"/>
-                            <input type = "button" value = "초기화"/>
-                            <input type = "button" value = "글 목록"/>
-                        </td>
-                    </tr>
-                </form>
-            </tbody>
-        </table>
-    </div>
-    </header>
+    <table class = "bulletin_form">
+        <thead>
+            <caption>Write</caption>
+        </thead>
+        <tbody>
+            <form>
+                <tr>
+                    <th>Title</th>
+                    <td>
+                        <input type = "text" placeholder = "Title" name = "subject" style = "width : 960px; height : 30px; font:size 15px;" />
+                     </td>
+                </tr>
+                <tr>
+                    <th>Content</th>
+                    <td>
+                        <textarea cols = "10" placeholder = "Content " name = "content" style = "width : 960px; height : 600px; font:size 15px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>File: </th>
+                    <td>
+                        <input type = "file" name = "filename"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Password: </th>
+                    <td>
+                        <input type = "password" placeholder = "Password" style = "width : 300px; height : 15px; font:size 15px;"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input id = "submit" type = "button" value = "등록"/>
+                        <input id = "reset" type = "button" value = "초기화"/>
+                        <input id = "list" type = "button" value = "글 목록"/>
+                    </td>
+                </tr>
+            </form>
+        </tbody>
+    </table>
 </body>
 </html>
