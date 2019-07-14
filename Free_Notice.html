@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 960px;
+        }
+
+        .notice_table {
+            margin: 100px auto 0px auto;
+        }
+
+        .notice_table, .notice_table th, .notice_table td {
+            border: 1px solid black;
+            border-width: 1px 0;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .notice_table th {
+            background-color: gray;
+            font-size: 1em;
+            color: white;
+            border-width: 3px 0;
+        }
+
+        .notice_table td {
+            border-style: dotted;
+        }
+
+        .notice_table tr:hover td {
+            background-color: rgb(201, 200, 191);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<table class = "notice_table">
+    <thead>
+        <caption>Notice</caption>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+            <th>조회수</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Hello</td>
+            <td>World!</td>
+            <td>2019.07.13</td>
+            <td>10</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr>
+            <td>2</td>
+            <td>Hello</td>
+            <td>World!2</td>
+            <td>2019.07.13</td>
+            <td>11</td>
+        </tr>
+    </tbody>
+    <tbody>
+            <tr>
+                <td>3</td>
+                <td>Hello</td>
+                <td>World!3</td>
+                <td>2019.07.13</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+</table>
+</body>
+</html>
